@@ -5,7 +5,7 @@
 
 ## Read in data as a data table (using fread for speed).
 ## This also converts "?" to NA.
-library(data.table)
+require(data.table)
 power <- fread("household_power_consumption.txt", 
     colClasses = "character", na.strings = c("?") )
 
